@@ -1,0 +1,60 @@
+Source: python-requests-unixsocket
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-all,
+               python-pbr,
+               python-setuptools,
+               python3-all,
+               python3-pbr,
+               python3-setuptools,
+Build-Depends-Indep: python-pytest,
+                     python-requests,
+                     python-urllib3,
+                     python-waitress,
+                     python3-pytest,
+                     python3-requests,
+                     python3-urllib3,
+                     python3-waitress,
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-requests-unixsocket.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-requests-unixsocket.git
+Homepage: https://github.com/msabramo/requests-unixsocket
+
+Package: python-requests-unixsocket
+Architecture: all
+Depends: python-requests,
+         ${misc:Depends},
+         ${python:Depends},
+Description: use requests to talk HTTP via a UNIX domain socket - Python 2.7
+ The requests-unixsocket makes it possible to talk using the HTTP protocol via
+ a UNIX domain socket. Internally, requests-unixsocket uses monkeypatching to
+ use the functionality of requests while making minimal changes.
+ .
+ Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
+ multipart files, and parameters with simple Python dictionaries, and access
+ the response data in the same way. It's powered by httplib and urllib3, but
+ it does all the hard work and crazy hacks for you.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-requests-unixsocket
+Architecture: all
+Depends: python3-requests,
+         ${misc:Depends},
+         ${python3:Depends},
+Description: Use requests to talk HTTP via a UNIX domain socket - Python 3.x
+ The requests-unixsocket makes it possible to talk using the HTTP protocol via
+ a UNIX domain socket. Internally, requests-unixsocket uses monkeypatching to
+ use the functionality of requests while making minimal changes.
+ .
+ Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
+ multipart files, and parameters with simple Python dictionaries, and access
+ the response data in the same way. It's powered by httplib and urllib3, but
+ it does all the hard work and crazy hacks for you.
+ .
+ This package contains the Python 3.x module.

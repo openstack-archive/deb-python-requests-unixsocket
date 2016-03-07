@@ -1,0 +1,11 @@
+Description: Do not run tests with --pep8
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2016-03-07
+
+--- python-requests-unixsocket-0.1.5.orig/pytest.ini
++++ python-requests-unixsocket-0.1.5/pytest.ini
+@@ -1,2 +1,2 @@
+ [pytest]
+-addopts = --tb=short --pep8
++addopts = --tb=short

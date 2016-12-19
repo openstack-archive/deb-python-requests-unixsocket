@@ -1,8 +1,14 @@
-python-requests-unixsocket (0.1.5-3) UNRELEASED; urgency=medium
+python-requests-unixsocket (0.1.5-3) unstable; urgency=medium
 
+  * Team upload.
+
+  [ Ondřej Nový ]
   * Bumped debhelper compat version to 10
 
- -- Ondřej Nový <onovy@debian.org>  Thu, 24 Nov 2016 00:11:04 +0100
+  [ Ondřej Kobližek ]
+  * Non case sensitive url comparison in tests (Closes: #848654)
+
+ -- Ondřej Kobližek <koblizeko@gmail.com>  Mon, 19 Dec 2016 15:00:29 +0100
 
 python-requests-unixsocket (0.1.5-2) unstable; urgency=medium
 
